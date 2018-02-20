@@ -3,29 +3,51 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Это заголовок тайтл</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="scripts.js"></script>
+        <style>
+            #panel {
+                height: 300px;
+                background: greenyellow;
+                border: 1px solid green;
+                margin: auto;
+                overflow: hidden;
+            }
+
+            .active {
+                background-color: aqua;
+            }
+
+            .delete {
+                float: right;
+                width: 50px;
+            }
+        </style>
 	</head>
 	<body>
-		<h1> Заголовок </h1>
-		<p>Это основное содержимое страницы.</p>
-		<h2>Заголовок 2</h2>
-		<p>
-			Второй 
-			<b>абзац</b>.
-		</p>
-		<p>Третий <i>абзац</i>.</p>
+        <div id="panel" class="pane">
+            <img class="delete" src="https://cdn3.iconfinder.com/data/icons/status/100/close_4-128.png">
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus debitis esse harum, nihil rem sed
+                vitae. Dolore est, fugiat id laborum, laudantium maiores necessitatibus nemo obcaecati quidem reiciendis
+                sapiente sunt?
+            </div>
+            <div>Dolores nostrum quisquam sapiente. Itaque laboriosam, praesentium? Aliquid architecto corporis deleniti
+                doloribus eum eveniet ex saepe unde! Consequuntur cupiditate dolorem inventore labore molestiae natus
+                perspiciatis praesentium quidem suscipit vitae. Nostrum?
+            </div>
+            <div>Accusantium assumenda at beatae commodi consectetur cum cupiditate doloribus error facilis fugit hic,
+                ipsam, nemo nesciunt omnis possimus quisquam sed tempore ullam? A ab adipisci molestias nobis obcaecati
+                porro temporibus?
+            </div>
+            <div>Ab asperiores assumenda atque beatae blanditiis corporis cumque deleniti dicta et, expedita, id illo
+                inventore laboriosam laborum libero magni maiores nam nesciunt nisi omnis provident quasi saepe sed,
+                suscipit veritatis?
+            </div>
+        </div>
+        <button type="button" class="btn-slide">Переключить</button>
+        <a href="ajax.html" class="js-ajax">Тест</a>
+        <div id="content">
 
-		<ol type="I">
-			<li>
-				Первый пункт списка.
-				<ol type="I">
-					<li value="5">Первый подпункт</li>
-					<li>Второй подпункт</li>
-				</ol>
-			</li>
-			<li>Второй пункт списка.</li>
-			<li>Третий пункт списка.</li>
-		<ol>
-
-		<p><a href="page.html" target="_blank">Перейти на вторую</a></p>
+        </div>
 	</body>
 </html>
